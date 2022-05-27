@@ -1,0 +1,14 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string name = "Seth";
+		Console.WriteLine(name);
+		int number = 23;
+		Console.WriteLine(number);
+		string Look = "Look Ma no hands, I'm coding on my own.";
+		Console.WriteLine(Look);
+	}
+}
