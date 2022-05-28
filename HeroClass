@@ -1,0 +1,48 @@
+using System;
+					
+public class Program
+{
+	public Hero heroOne;
+	public Hero heroTwo;
+	public Hero heroThree;
+	
+	public void Main()
+	{
+		heroOne = new Hero();
+		heroTwo = new Hero();
+		heroThree = new Hero();
+		
+		heroOne.health = 2;
+		heroOne.powerLevel = 5;
+		heroOne.armour = 12;
+		
+		heroTwo.health = 3;
+		heroTwo.powerLevel = 1;
+		heroTwo.armour = 10;
+		
+		heroThree.health = 12;
+		heroThree.powerLevel= 22;
+		heroThree.armour = 34;
+		
+		Console.WriteLine("Hero One's stats are");
+		Console.WriteLine(heroOne.health);
+		Console.WriteLine(heroOne.powerLevel);
+		Console.WriteLine(heroOne.armour);
+		 
+		Console.WriteLine("Hero Two's stats are");
+		Console.WriteLine(heroTwo.health);
+		Console.WriteLine(heroTwo.powerLevel);
+		Console.WriteLine(heroTwo.armour);
+		
+		Console.WriteLine("Hero Three's stats are");
+		Console.WriteLine(heroThree.health);
+		Console.WriteLine(heroThree.powerLevel);
+		Console.WriteLine(heroThree.armour);
+	}
+}
+
+public class Hero {
+	public int health;
+	public int powerLevel;
+	public int armour;
+}
