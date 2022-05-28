@@ -1,0 +1,30 @@
+using System;
+					
+public class Program
+{
+	public Pet petOne;
+	
+	public void Main()
+	{
+			petOne = new Pet();
+		
+			petOne.health = 30;
+			petOne.supportArmour = 55;
+			petOne.damage = 100;
+		
+			Console.WriteLine("Pet Health is:");
+			Console.WriteLine(petOne.health);
+			Console.WriteLine("Pet armour given to player is:");
+			Console.WriteLine(petOne.supportArmour);
+			Console.WriteLine("Pet damage done per second is:");
+			Console.WriteLine(petOne.damage);
+		
+		
+	}
+}
+
+	public class Pet {
+			public int health;
+			public int supportArmour;
+			public int damage;
+	}
