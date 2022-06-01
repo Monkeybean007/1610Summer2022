@@ -1,0 +1,34 @@
+using System;
+
+public class Usage
+{
+	public Weapon sword;
+	public Player playerOne;
+	public void Main()
+	{
+		sword = new Weapon();
+		playerOne = new Player();
+		playerOne.Level = 45;
+		sword.Level = 35;
+		if (sword.Level > playerOne.Level)
+		{
+			Console.WriteLine("You cant use this Sword, become a higher Level to use it.");
+		}
+		else
+		{
+			Console.WriteLine("Enjoy Your New Sword!!!");
+		}
+	}
+}
+
+public class Weapon
+{
+	public int Level;
+	public int xp;
+}
+
+public class Player
+{
+	public int Level;
+	public int xp;
+}
