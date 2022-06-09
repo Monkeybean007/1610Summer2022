@@ -1,0 +1,16 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] playertypes = {"Pawn", "Pawn", "Pawn"};
+		
+		for (var i = 0; i <playertypes.Length ; i ++){
+			playertypes[0] = "Queen";
+			}
+		foreach(var playertype in playertypes) {
+			Console.WriteLine(playertype);
+		}
+	}
+}
