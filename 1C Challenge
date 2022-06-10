@@ -1,0 +1,37 @@
+using System;
+
+public class Program
+{
+	public void Main()
+	{
+		car[] carSpecs = {new car(), new car(), new car()};
+		carSpecs[1].carName = "G35";
+		carSpecs[2].carName = "350z";
+		//carSpecs[3].carName = "BRZ";
+		for (var i = 0; i < carSpecs.Length; i++)
+		{
+			carSpecs[i].HP = 350;
+			carSpecs[i].torque = 260;
+		}
+
+		foreach (var item in carSpecs)
+		{
+			Console.WriteLine(item.carName);
+			Console.WriteLine(item.HP);
+			Console.WriteLine(item.torque);
+			int z = 5;
+			while (z > 350)
+			{
+				Console.WriteLine("fastest car is", z);
+				z++;
+			}
+		}
+	}
+}
+
+public class car
+{
+	public string carName = "Car Specs";
+	public int HP = 350;
+	public int torque = 260;
+}
