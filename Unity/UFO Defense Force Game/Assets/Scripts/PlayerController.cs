@@ -10,12 +10,7 @@ public class PlayerController : MonoBehaviour
     public Transform blaster;
     public GameObject lazerbolt;
     
-    void Start()
-    {
-        
-    }
-
-    
+   
     void Update()
     {
         //Set Horiztonal input to get values from keyboard
@@ -44,4 +39,10 @@ public class PlayerController : MonoBehaviour
             Instantiate(lazerbolt, blaster.transform.position, lazerbolt.transform.rotation );
         }
     }
-}
+   
+        //Destroy Object Hitten by Lazer, with a trigger.
+         private void OnTriggerEnter(Collider other)
+        {
+            Destroy(other.gameObject);
+        }
+    }
