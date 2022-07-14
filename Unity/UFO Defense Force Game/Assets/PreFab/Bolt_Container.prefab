@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1006868377573620806}
   m_Layer: 0
   m_Name: Bolt_Container
-  m_TagString: Untagged
+  m_TagString: Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -71,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 1748710961825377317, guid: e70d13c7c63d0734e86fdd237afba498, type: 3}
       propertyPath: m_Name
       value: Laser_Bolt
+      objectReference: {fileID: 0}
+    - target: {fileID: 1748710961825377317, guid: e70d13c7c63d0734e86fdd237afba498, type: 3}
+      propertyPath: m_TagString
+      value: Bullet
       objectReference: {fileID: 0}
     - target: {fileID: 5579201258465375203, guid: e70d13c7c63d0734e86fdd237afba498, type: 3}
       propertyPath: m_RootOrder

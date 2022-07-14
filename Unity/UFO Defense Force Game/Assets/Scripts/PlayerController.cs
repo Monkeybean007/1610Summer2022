@@ -5,19 +5,24 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float horizontalInput;
+    public float verticalInput;
     public float speed = 25;
     public float xRange = 30;
     public Transform blaster;
     public GameObject lazerbolt;
+    private int Coin;
     
    
     void Update()
     {
         //Set Horiztonal input to get values from keyboard
         horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
 
         //Moves player left and right
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+        
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
         
         //Keep player within bounds
         //Left side wall
@@ -45,4 +50,5 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
         }
+        
     }
