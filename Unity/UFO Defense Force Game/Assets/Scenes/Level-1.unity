@@ -367,8 +367,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -392,8 +392,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 30, z: 13.7}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 30, z: 10.49}
+  m_LocalScale: {x: 1.5, y: 1.2625, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -901,7 +901,7 @@ MonoBehaviour:
   horizontalInput: 0
   verticalInput: 0
   speed: 25
-  xRange: 30
+  xRange: 26
   blaster: {fileID: 295373301}
   lazerbolt: {fileID: 7660845407049736121, guid: e91a5d03b055998469008392a901a9e6, type: 3}
 --- !u!54 &1858941105
@@ -975,6 +975,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebea65b3f7a4ad647b890ae133fb73c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ufoPrefabs:
+  - {fileID: 7915692569906555258, guid: e4de22e9fee3b2f4ea0e5ffb4a2c6787, type: 3}
+  - {fileID: 6169840541536588016, guid: 1453cac097ee4f8449897bc5546caee4, type: 3}
+  - {fileID: 6957514675083302381, guid: 621d644a5ef0bbc4faef02dad384d284, type: 3}
 --- !u!4 &1900290587
 Transform:
   m_ObjectHideFlags: 0
@@ -983,7 +987,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1900290585}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.3, y: 0, z: 26.9}
+  m_LocalPosition: {x: -1.3, y: 0, z: 16.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
