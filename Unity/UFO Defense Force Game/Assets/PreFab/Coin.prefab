@@ -13,11 +13,15 @@ GameObject:
   - component: {fileID: 4081663167208571693}
   - component: {fileID: 3470297393022332016}
   - component: {fileID: 3683039544631024823}
-  - component: {fileID: -4476243706744985993}
-  - component: {fileID: 1545011759897031636}
+  - component: {fileID: -1623469770378700710}
+  - component: {fileID: -7274773072385226350}
+  - component: {fileID: -2056701548191616122}
+  - component: {fileID: -8453661209112932156}
+  - component: {fileID: 6502973372182275093}
+  - component: {fileID: -3447363646428404515}
   m_Layer: 0
   m_Name: Coin
-  m_TagString: Untagged
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,7 +34,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8400643175217887243}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 5.84}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.12319, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65,7 +69,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: eae70e395f5b75d41a38423e9ae239b2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -99,7 +103,7 @@ CapsuleCollider:
   m_Enabled: 1
   m_Radius: 0.5000001
   m_Height: 2
-  m_Direction: 1
+  m_Direction: 0
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!114 &3683039544631024823
 MonoBehaviour:
@@ -113,9 +117,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8580fb2039de2a4a9765629faaf6352, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CoinPrefabs:
-  - {fileID: 8400643175217887243}
---- !u!114 &-4476243706744985993
+  textCoins: {fileID: 0}
+--- !u!114 &-1623469770378700710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400643175217887243}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0f7b2fd616e46346a3af2f4c8f050ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+--- !u!114 &-7274773072385226350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -128,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2.5
---- !u!114 &1545011759897031636
+--- !u!114 &-2056701548191616122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -137,7 +153,50 @@ MonoBehaviour:
   m_GameObject: {fileID: 8400643175217887243}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 378a9692018645949baab855d648fffd, type: 3}
+  m_Script: {fileID: 11500000, guid: 82165e51e0519a040947cdb4f22ecf2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _coinText: {fileID: 0}
+  coinPrefabs:
+  - {fileID: 8400643175217887243}
+--- !u!54 &-8453661209112932156
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400643175217887243}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 1
+--- !u!75 &6502973372182275093
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400643175217887243}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: -5}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
+--- !u!114 &-3447363646428404515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8400643175217887243}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df3de10bf090ec7499b73df7830ad272, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topBounds: 30
+  lowerBounds: -10

@@ -8,8 +8,7 @@ public class RandomMovement : MonoBehaviour
 
     void Update () 
     {
-
-        transform.position = new Vector3 (Mathf.PingPong(Time.time * speed, 10), transform.position.y, transform.position.z);
-
+        
+       transform.position = new Vector3 (Mathf.PingPong(Time.time * speed, 10),transform.position.z, transform.position.x);
     }
 }
