@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 7915692569906555249}
   - component: {fileID: 7915692569906555254}
   - component: {fileID: 7915692569906555255}
-  - component: {fileID: 7915692569906555252}
   - component: {fileID: 7915692569906555253}
   - component: {fileID: 7915692569906555250}
   - component: {fileID: 1175441902254890533}
+  - component: {fileID: 2094855393668353095}
+  - component: {fileID: 5230085038523955863}
   m_Layer: 0
   m_Name: UFO Cruiser
   m_TagString: Untagged
@@ -118,18 +119,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7915692569906555252
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7915692569906555258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7915208f4148744ba2b598946cba67a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &7915692569906555253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,3 +159,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   topBounds: 30
   lowerBounds: -10
+--- !u!114 &2094855393668353095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915692569906555258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 999ab8e138c7253429bc79a72fef52ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreManager: {fileID: 0}
+  scoreToGive: 0
+--- !u!114 &5230085038523955863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7915692569906555258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7915208f4148744ba2b598946cba67a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
