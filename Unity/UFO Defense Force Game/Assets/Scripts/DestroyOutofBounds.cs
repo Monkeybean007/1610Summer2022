@@ -19,7 +19,7 @@ public class DestroyOutofBounds : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Destroy Bulltes when they go out of bounds.
+        //Destroy Bullets when they go out of bounds.
         if(transform.position.z > topBounds)
         {
         Destroy(gameObject);
@@ -28,7 +28,7 @@ public class DestroyOutofBounds : MonoBehaviour
         {
             Debug.Log("Game Over!");
             Destroy(gameObject);
-            //Time.timeScale = 0
+            
         }
     }
 }

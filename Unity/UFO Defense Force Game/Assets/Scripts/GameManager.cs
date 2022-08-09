@@ -35,7 +35,8 @@ public class GameManager : MonoBehaviour
     }
         public void EndGame()
         {  
-        gameOverText.gameObject.SetActive(true); 
+        
+        gameOverText.gameObject.SetActive(true); //Show Game Over text when game ends
         Time.timeScale = 0; //Freeze Time
         }
     }
