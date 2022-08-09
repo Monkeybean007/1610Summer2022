@@ -11,14 +11,14 @@ public class ScoreManager : MonoBehaviour
 
     public void IncreaseScore(int amount)// Increases score by predetermined amount set in score score variable
     {
-        score =+ amount;
+        score += amount;
         UpdateScoreText();
 
     }
 
     public void DecreaseScore(int amount) // Decreased the score by predetermined amount set in score variable
     {
-        score =+ amount;
+        score -= amount;
         UpdateScoreText();
 
     }
